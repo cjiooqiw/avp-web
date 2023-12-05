@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PRACVP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4; /* 轻微灰色背景 */
+            font-family: Arial, sans-serif; /* 更改字体 */
+        }
+        .centered {
+            text-align: center;
+        }
+        .logo-image {
+            width: 20%;
+            height: auto;
+            display: block;
+            margin: 20px auto; /* 居中并添加上下边距 */
+        }
+        .flowchart-image {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            display: block;
+            margin: 20px auto; /* 添加边距 */
+        }
+        .content-section {
+            background-color: white; /* 白色背景 */
+            padding: 20px;
+            border-radius: 8px; /* 圆角边框 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+            margin-bottom: 20px; /* 添加下边距 */
+        }
+        .btn-primary {
+            width: auto; /* 按钮宽度自适应 */
+            padding: 10px 20px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo 图片 -->
+        <img src="static/images/img.png" alt="Logo" class="logo-image">
+
+        <!-- 主标题和二级标题 -->
+        <div class="centered">
+            <h1>AVPIden</h1>
+            <h2>一个预测和鉴别抗病毒肽的工具</h2>
+        </div>
+
+        <!-- 引言小标题和正文 -->
+        <div class="content-section">
+            <h3>引言</h3>
+            <p>
+                ACVP是一类具有潜在抗病毒能力的抗菌肽，对病菌，真菌，病毒都有较强的杀伤力。目前，人们已经开发了多种计算工具来识别ACVP，
+                但其整体预测性能仍不满足实际治疗的需求。为了更有效的识别抗菌肽，我们基于有效的特征表示和两层堆叠学习框架，构建了一个高效可靠的预测模型PACVP用于识别ACVP。
+            </p>
+        </div>
+
+        <!-- 流程图 -->
+        <div class="centered">
+            <img src="static/images/liucheng.png" alt="流程图" class="flowchart-image">
+        </div>
+
+        <!-- 前往预测页面的按钮 -->
+        <div class="centered mt-4">
+            <a href="/predict" class="btn btn-primary">开始预测</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
